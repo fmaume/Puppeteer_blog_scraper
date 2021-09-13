@@ -18,6 +18,14 @@ let stemp = document.querySelector('p + p + p')
 copy(result)
 ```
 
+### Copy full text without formating
+```
+let stemp = document.querySelector('p + p + p')
+            stemp = stemp.parentElement
+  
+copy(stemp)
+```
+
 ## Puppeter code to scape a blog post
 ```
 const puppeteer = require('puppeteer');
