@@ -22,7 +22,8 @@ copy(result)
 ```
 let stemp = document.querySelector('p + p + p')
             stemp = stemp.parentElement
-  
+stemp = stemp.innerText
+print(stemp.length)  
 copy(stemp)
 ```
 
