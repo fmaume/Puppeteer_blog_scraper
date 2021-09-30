@@ -9,13 +9,14 @@ let stemp = document.querySelector('p + p + p')
             let result = []
             for (let element  of stemp) {
                 let text = element.innerText
-                
+                let type = element.tagName
                 if (text.length > 0) {
-                    result.push( text)
+                    result.push({ "text": text, "type": type })
                 }
 
             }
 copy(result)
+
 ```
 ## code to extract pic url from dev console
 ```
@@ -27,7 +28,7 @@ stemp = stemp.querySelectorAll("img")
                 let text = element.src
                 
                 if (text.length > 0) {
-                    result.push({ "text": text, "type": type })
+                    result.push( text)
                 }
 
             }
