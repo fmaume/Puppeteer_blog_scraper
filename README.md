@@ -9,9 +9,9 @@ let stemp = document.querySelector('p + p + p')
             let result = []
             for (let element  of stemp) {
                 let text = element.innerText
-                let type = element.tagName
+                
                 if (text.length > 0) {
-                    result.push({ "text": text, "type": type })
+                    result.push( text)
                 }
 
             }
