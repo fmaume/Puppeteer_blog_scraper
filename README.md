@@ -17,7 +17,22 @@ let stemp = document.querySelector('p + p + p')
             }
 copy(result)
 ```
+## code to extract pic url from dev console
+```
+let stemp = document.querySelector('p + p + p')
+stemp = stemp.parentElement
+stemp = stemp.querySelectorAll("img")
+            let result = []
+            for (let element  of stemp) {
+                let text = element.src
+                
+                if (text.length > 0) {
+                    result.push({ "text": text, "type": type })
+                }
 
+            }
+copy(result)
+```
 ### Copy full text without formating
 ```
 let stemp = document.querySelector('p + p + p')
